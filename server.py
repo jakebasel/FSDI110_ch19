@@ -108,3 +108,9 @@ def test():
 
 #adding some awesome code that will fix everything
 #another change
+
+"""
+git add . 
+git commit -m "<a message>"
+git push
+"""
