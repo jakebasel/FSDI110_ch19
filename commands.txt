@@ -33,3 +33,21 @@ deactivate
 ^C(venv) jake@JAKE-DELLXPS:~/flask_api$ export FLASK_APP=server.py
 (venv) jake@JAKE-DELLXPS:~/flask_api$ export FLASK_ENV=development
 (venv) jake@JAKE-DELLXPS:~/flask_api$ flask run
+
+# MongoDB
+# check status / start mongoDB service
+sudo service mongodb start
+sudo service mongodb status
+
+#MongoDB Shell
+show dbs
+user <dbName>
+show collections
+db.<collection>.find({})
+
+#github
+git add . 
+git commit -m "<a message>"
+git push
+
+
