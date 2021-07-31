@@ -1,0 +1,24 @@
+.admin-page .capture-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    background-color: grey;
+    width:450px;
+}
+
+.admin-page .my-control {
+    margin-bottom:12px;
+    align-items: center;
+}
+
+.admin-page .my-control {
+    width:80px;
+    text-align: right;
+    margin-right:7px;
+}
+
+.admin-page .my-control input{
+    width:230px;
+}

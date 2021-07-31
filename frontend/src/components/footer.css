@@ -1,0 +1,8 @@
+.footer-page {
+    border: 1px solid gray;
+    background-color: gray;
+    margin-top: 10px;
+}
+.footer-page h6{
+    color:white;
+}

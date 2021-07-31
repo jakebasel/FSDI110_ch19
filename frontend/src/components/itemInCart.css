@@ -1,0 +1,29 @@
+.item-in-cart {
+    display: flex;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    padding: 2px;
+    margin: 2px 2px;
+}
+
+.item-in-cart img{
+    height: 200px;
+    width: 200px;
+}
+
+.item-in-cart label{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.item-in-cart .item-info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    padding: 5px;
+}

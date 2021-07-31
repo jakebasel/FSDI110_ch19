@@ -1,0 +1,7 @@
+.catalog-page{
+    padding-top: 30px;
+}
+.catalog-page .filter-buttons .btn {
+    margin-right:10px;
+    margin-bottom:10px;
+}

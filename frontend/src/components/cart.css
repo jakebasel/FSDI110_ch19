@@ -1,0 +1,9 @@
+.cart-page-h1{
+    color:blue;
+}
+.cart-page .products-container{
+    display:flex;
+    width:80%;
+    flex-wrap: wrap;
+    padding:5px;
+}

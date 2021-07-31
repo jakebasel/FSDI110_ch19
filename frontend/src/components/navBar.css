@@ -1,0 +1,9 @@
+.navbar-page{
+    margin-top: 30px;
+    padding: 3px 3px;
+    border: 5px solid black;
+}
+
+.navbar-page .btn{
+    color:black;
+}
