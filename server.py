@@ -55,6 +55,13 @@ def get_product_by_category(category):
     data = db.products.find({"category": category})
     results = [item for item in data]
     return parse_json(results)
+
+@app.route("/api/discountCode/<code>")
+def validate_discount(code):
+    data = db.couponCodes.find({"code":code})
+    for code in data:
+        return parse_json(code)
+    return parse_json({"error":True,"reason":"Invalid Code"})
     
 @app.route("/api/catalog/id/<id>")
 def get_product_by_id(id):
@@ -88,6 +95,15 @@ def test_data_manipulation():
     print(test_data)
 
     return parse_json(test_data[0])
+
+@app.route("/test/populatecodes")
+def test_populate_codes():
+    db.couponCodes.insert({"code":"qwerty","discount":10})
+    db.couponCodes.insert({"code":"ploop","discount":7})
+    db.couponCodes.insert({"code":"cheaper","discount":5})
+    db.couponCodes.insert({"code":"abab1212","discount":95})
+
+    return "Codes registered"
 
 #if __name__ == '__main__':
 #    app.run(debug=True)
